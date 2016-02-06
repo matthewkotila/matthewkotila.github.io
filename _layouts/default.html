@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    <div class="container content">
+      <header class="masthead">
+        <h3 class="masthead-title">
+          <a href="{{ site.baseurl }}/" title="Home"><span style="color: #16A085;">matthew</span>Kotila</a><br>
+        </h3>
+        <small style="color: #606060">{{ site.tagline }}</small>
+        <div class="masthead-navbar">
+          <a href="/article">articles</a>
+          <small> &emsp; &emsp; </small>
+          <a href="/projects">projects</a>
+          <small> &emsp; &emsp; </small>
+          <a href="https://www.dropbox.com/s/b6gn9ay7ha6bp7y/resume.pdf?raw=1">resume</a>
+          <small> &emsp; &emsp; </small>
+          <a href="https://github.com/matthewkotila"><i class="fa fa-github"></i></a>
+          <small> &emsp; &emsp; </small>
+          <a href="https://www.linkedin.com/in/matthewkotila"><i class="fa fa-linkedin-square"></i></a>
+          <small> &emsp; &emsp; </small>
+          <script type="text/javascript" language="javascript">
+            {
+              coded="2uCCS9c.E.fRCMJu@v2uMJ.WR2"
+              key="HjCpYTaNBweqIhl60Mnz8g2RKZk51PLruXOc94tSJFydADUvQs3xfiV7bEmoGW"
+              shift=coded.length
+              link=""
+              for (i=0; i<coded.length; i++) {
+                if (key.indexOf(coded.charAt(i))==-1) {
+                  ltr=coded.charAt(i)
+                  link+=(ltr)
+                } else {
+                  ltr=(key.indexOf(coded.charAt(i))-shift+key.length)%key.length
+                  link+=(key.charAt(ltr))
+                }
+              } document.write("<a href='mailto:"+link+"'><i class='fa fa-envelope-o'></i></a>")
+            }
+          </script>
+          <noscript>Sorry, you need Javascript on to email me.</noscript>
+          <hr></hr>
+        </div>
+      </header>
+
+      <main>
+        {{ content }}
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time> <a href="/" style="color: #000000;"><span style="color: #16A085;">matthew</span>Kotila</a>
+        </small>
+      </footer>
+    </div>
+
+  </body>
+</html>

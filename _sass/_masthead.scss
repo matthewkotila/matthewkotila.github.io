@@ -1,0 +1,43 @@
+// Masthead
+//
+// Super small header above the content for site name and short description.
+
+.masthead {
+  padding-top:    3rem;
+}
+
+.masthead-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #000000;
+
+  a {
+    color: #000000;
+  }
+
+  small {
+    font-size: 75%;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+}
+
+.masthead-navbar,
+.masthead-navbar a {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.fa-github:hover {
+  color: #000000;
+}
+
+.fa-linkedin-square:hover {
+  color: #0077b5;
+}
+
+.fa-envelope-o:hover {
+  color: #000000;
+}

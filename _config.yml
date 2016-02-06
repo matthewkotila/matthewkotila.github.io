@@ -1,0 +1,19 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           /article/:title
+
+# Setup
+title:               Matthew Kotila
+tagline:             Fascinated with software development and a hunger for learning.
+url:                 https://matthewkotila.com
+paginate:            3
+baseurl:             ""
+highlighter:         rouge
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
